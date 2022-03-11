@@ -12,6 +12,6 @@ Show state isolated within the UserInput component, get student to show it addin
 We need to know what the userName is elsewhere in our app, so move this state up a level. 
 
 ## Tying it all together: 
--Now look at the DisplayMessage component. 
--Figure out how we can put all these pieces together to find out what the user's name and animal is then render it with our DisplayMessage component. 
+- Now look at the DisplayMessage component. 
+- Figure out how we can put all these pieces together to find out what the user's name and animal is then render it with our DisplayMessage component. 
 
