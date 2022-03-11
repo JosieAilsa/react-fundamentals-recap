@@ -7,25 +7,23 @@ import { useState } from 'react';
 
 const App = () => {
   const [name, setName] = useState("")
-  const [favouriteAnimal,setFavouriteAnimal] = useState("")
 
   const handleNameInput = (e) => {
     const currentInput = e.target.value;
     setName(currentInput)
   }
-  
-  const getFavouriteAnimal = (e) => {
-    const currentInput = e.target.value;
-    setFavouriteAnimal(currentInput)
-  } 
 
 
   return (
     <>
       <h1>Fact finder!</h1>
       <UserInput handleUserInput={handleNameInput} label="Name"/>
-      <UserInput handleUserInput={getFavouriteAnimal} label="Favourite Animal"/>
-      <DisplayMessage name={name} favoriteAnimal={favouriteAnimal} />
+      {
+      // Add the userInput component again here to get the favourite animal 
+
+      //Take a look at the DisplayMessage component, use this component to to now render the message to the screen using the onChange values from both of the userInputs 
+
+      }
     </>
   );
 }
