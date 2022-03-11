@@ -1,16 +1,15 @@
 
 import { useState } from "react";
 import "./UserInput.scss"
-const UserInput = () => {
-//1.How can we make this component reusable so that it isn't just an input with the label of name
-
-//2. We can pass down attributes as props too, how could we pass down the prop of user-input--highlight to this component? 
+const UserInput = ({classNames, label}) => {
+//How can we set the state so the user name changes in the h2 underneath?
     return (
     <>
         <form>
-            <label htmlFor="user-input">Name: </label>
-            <input id="user-input--highlight"/>
+            <label htmlFor="user-input">{label}: </label>
+            <input className={`user-input ${classNames}`}/>
         </form>
+        <h2>{/* Show userName here*/}</h2>
     </>
       );
 }

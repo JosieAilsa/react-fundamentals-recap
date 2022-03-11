@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <h1>Fact finder!</h1>
-      <UserInput/>
+      <UserInput label="Name" classNames ="user-input--highlight"/>
     </>
   );
 }
